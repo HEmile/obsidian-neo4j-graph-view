@@ -16,8 +16,8 @@
 </p>
 
 ANNOUNCEMENT: This plugin has been rewritten with new name Juggl. It no longer requires Neo4j and Python, and has a lot more features than Neo4j graph view.
-You can install a release candidate of the new plugin [from this link](https://juggl.io/Installing+Juggl+pre-releases) and it will be on the Obsidian community plugins soon!
-The Neo4j Graph View will be removed at that point.
+You can install this new plugin from the Obsidian community plugins settings!
+Note that the Neo4j Graph View plugin will be removed from the community plugins soon.
 
 ## Neo4j Graph View
 ![](https://raw.githubusercontent.com/HEmile/obsidian-neo4j-graph-view/main/neo4j-graph-view/resources/styled_screenshot.png)
