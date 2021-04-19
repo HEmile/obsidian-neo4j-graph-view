@@ -89,7 +89,7 @@ export class Neo4jViewSettingTab extends PluginSettingTab {
         containerEl.createEl('h3', {text: 'Neo4j Graph View'});
 
         let doc_link = document.createElement("a");
-        doc_link.href = "https://publish.obsidian.md/semantic-obsidian/Neo4j+Graph+View+Plugin";
+        doc_link.href = "https://juggl.io/Neo4j+Graph+View/Neo4j+Graph+View+Plugin";
         doc_link.target = '_blank';
         doc_link.innerHTML = 'the documentation';
 
@@ -98,8 +98,15 @@ export class Neo4jViewSettingTab extends PluginSettingTab {
         discord_link.target = '_blank';
         discord_link.innerHTML = 'the Discord server';
 
+        let juggl_link = document.createElement("a");
+        juggl_link.href = "https://juggl.io/";
+        juggl_link.target = '_blank';
+        juggl_link.innerHTML = 'Juggl';
+
         let introPar = document.createElement("p");
-        introPar.innerHTML = "Check out " + doc_link.outerHTML + " for installation help and a getting started guide. <br>" +
+        introPar.innerHTML = "WARNING: Neo4j Graph View is deprecated and will not receive any more updates. " +
+            "It will be removed from the community plugins soon. It is replaced by " + juggl_link.outerHTML + ". <br> " +
+            "Check out " + doc_link.outerHTML + " for installation help and a getting started guide. <br>" +
             "Join " + discord_link.outerHTML + " for nice discussion and additional help."
 
         containerEl.appendChild(introPar);

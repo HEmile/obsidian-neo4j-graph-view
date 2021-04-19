@@ -106,7 +106,7 @@ export class NeoVisView extends ItemView{
                 });
                 this.network.on("oncontext", (event) => {
                     // Thanks Liam for sharing how to do context menus
-                    const fileMenu = new Menu(); // Creates empty file menu
+                    const fileMenu = new Menu(this.plugin.app); // Creates empty file menu
                     let nodeId = this.network.getNodeAt(event.pointer.DOM);
 
                     if (!(nodeId === undefined)) {

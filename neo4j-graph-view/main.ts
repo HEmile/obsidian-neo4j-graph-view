@@ -33,6 +33,9 @@ export default class Neo4jViewPlugin extends Plugin {
 	imgServer: Server;
 
 	async onload() {
+		let noticeText = "WARNING: Neo4j Graph View is deprecated and replaced by the new Obsidian plugin Juggl."
+		new Notice(noticeText);
+		console.log(noticeText);
 		if (this.app.vault.adapter instanceof FileSystemAdapter) {
 			this.path = this.app.vault.adapter.getBasePath();
 		}
@@ -123,6 +126,8 @@ export default class Neo4jViewPlugin extends Plugin {
 
 
 		await this.initialize();
+
+
 	}
 
 	public getFileFromAbsolutePath(abs_path: string): TAbstractFile {
